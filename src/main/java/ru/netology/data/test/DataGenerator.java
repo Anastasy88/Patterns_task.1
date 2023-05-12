@@ -1,5 +1,4 @@
-package ru.netology.data;
-
+package ru.netology.data.test;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
@@ -39,7 +38,7 @@ public class DataGenerator {
         }
 
         public static UserInfo generateUser(String locale) {
-            return new UserInfo(generateCity(), generateName(locale), generatePhone(locale));
+            return new ru.netology.data.DataGenerator.UserInfo(generateCity(), generateName(locale), generatePhone(locale));
         }
     }
 
@@ -51,5 +50,3 @@ public class DataGenerator {
     }
 
 }
-
-
